@@ -9,8 +9,7 @@ HEADERS += ui_preferences.h \
     qdjango/QDjangoQuerySet.h \
     qdjango/QDjangoModel.h \
     qdjango/QDjango_p.h \
-    qdjango/QDjango.h \
-    filewatcher.h
+    qdjango/QDjango.h
 SOURCES += preferencesform.cpp \
     niepcemain.cpp \
     main.cpp \
@@ -19,8 +18,7 @@ SOURCES += preferencesform.cpp \
     qdjango/QDjangoWhere.cpp \
     qdjango/QDjangoQuerySet.cpp \
     qdjango/QDjangoModel.cpp \
-    qdjango/QDjango.cpp \
-    filewatcher.cpp
+    qdjango/QDjango.cpp
 FORMS += preferencesform.ui \
     niepcemain.ui \
     librariesform.ui

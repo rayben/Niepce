@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'niepcemain.h'
 **
-** Created: Sat Jun 26 01:41:49 2010
+** Created: Sun Jun 27 01:34:36 2010
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_NiepceMain[] = {
        4,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -33,6 +33,7 @@ static const uint qt_meta_data_NiepceMain[] = {
  // slots: signature, parameters, type, tag, flags
       12,   11,   11,   11, 0x08,
       44,   11,   11,   11, 0x08,
+      85,   78,   11,   11, 0x08,
 
        0        // eod
 };
@@ -40,6 +41,7 @@ static const uint qt_meta_data_NiepceMain[] = {
 static const char qt_meta_stringdata_NiepceMain[] = {
     "NiepceMain\0\0on_action_Libraries_triggered()\0"
     "on_action_Preferences_triggered()\0"
+    "folder\0monitorFolder(QString)\0"
 };
 
 const QMetaObject NiepceMain::staticMetaObject = {
@@ -73,9 +75,10 @@ int NiepceMain::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         switch (_id) {
         case 0: on_action_Libraries_triggered(); break;
         case 1: on_action_Preferences_triggered(); break;
+        case 2: monitorFolder((*reinterpret_cast< QString(*)>(_a[1]))); break;
         default: ;
         }
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }

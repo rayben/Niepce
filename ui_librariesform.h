@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'librariesform.ui'
 **
-** Created: Fri Jun 25 01:00:36 2010
+** Created: Sun Jun 27 01:34:30 2010
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -72,7 +72,7 @@ public:
 
     void retranslateUi(QDialog *LibrariesForm)
     {
-        LibrariesForm->setWindowTitle(QApplication::translate("LibrariesForm", "Dialog", 0, QApplication::UnicodeUTF8));
+        LibrariesForm->setWindowTitle(QApplication::translate("LibrariesForm", "Libraries", 0, QApplication::UnicodeUTF8));
         addButton->setText(QApplication::translate("LibrariesForm", "Add", 0, QApplication::UnicodeUTF8));
         removeButton->setText(QApplication::translate("LibrariesForm", "Remove", 0, QApplication::UnicodeUTF8));
         okButton->setText(QApplication::translate("LibrariesForm", "OK", 0, QApplication::UnicodeUTF8));

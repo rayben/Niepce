@@ -5,7 +5,8 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QDir>
-
+#include <QStringBuilder>
+#include <QMessageBox>
 #include "qdjango/QDjangoModel.h"
 #include "qdjango/QDjango.h"
 #include "qdjango/QDjangoScript.h"
@@ -17,6 +18,7 @@ NiepceMain::NiepceMain(QWidget *parent) :
     ui(new Ui::NiepceMain)
 {
     ui->setupUi(this);
+    this->createDatabases();
 }
 
 NiepceMain::~NiepceMain()
@@ -45,6 +47,11 @@ void NiepceMain::createDatabases()
     QDjango::createTables();
 }
 
+void NiepceMain::monitorFolder(QString folder)
+{
+    QMessageBox::information(this, "Folder Added", "Folder " + folder + " has been added.");
+}
+
 void NiepceMain::changeEvent(QEvent *e)
 {
     QMainWindow::changeEvent(e);
@@ -68,5 +75,6 @@ void NiepceMain::on_action_Preferences_triggered()
 void NiepceMain::on_action_Libraries_triggered()
 {
     LibrariesForm dialog(this);
+    connect(&dialog, SIGNAL(libraryAdded(QString)), this, SLOT(monitorFolder(QString)));
     dialog.exec();
 }

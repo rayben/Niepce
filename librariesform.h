@@ -19,7 +19,11 @@ protected:
 private:
     Ui::LibrariesForm *ui;
 
+signals:
+    void libraryAdded(QString name);
+
 private slots:
+    void on_removeButton_clicked();
     void on_addButton_clicked();
     void on_okButton_clicked();
 };

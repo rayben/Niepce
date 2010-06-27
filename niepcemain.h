@@ -2,6 +2,7 @@
 #define NIEPCEMAIN_H
 
 #include <QMainWindow>
+#include <QFileSystemWatcher>
 
 namespace Ui {
     class NiepceMain;
@@ -16,6 +17,7 @@ public:
 private slots:
     void on_action_Libraries_triggered();
     void on_action_Preferences_triggered();
+    void monitorFolder(QString folder);
 
 protected:
     void changeEvent(QEvent *e);
@@ -23,6 +25,9 @@ protected:
 private:
     Ui::NiepceMain *ui;
     void createDatabases();
+
+private:
+    QFileSystemWatcher _watcher;
 };
 
 #endif // NIEPCEMAIN_H

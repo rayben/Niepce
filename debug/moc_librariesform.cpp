@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'librariesform.h'
 **
-** Created: Sat Jun 26 01:41:50 2010
+** Created: Sun Jun 27 01:34:37 2010
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,23 +23,28 @@ static const uint qt_meta_data_LibrariesForm[] = {
        4,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
+
+ // signals: signature, parameters, type, tag, flags
+      20,   15,   14,   14, 0x05,
 
  // slots: signature, parameters, type, tag, flags
-      15,   14,   14,   14, 0x08,
-      38,   14,   14,   14, 0x08,
+      42,   14,   14,   14, 0x08,
+      68,   14,   14,   14, 0x08,
+      91,   14,   14,   14, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_LibrariesForm[] = {
-    "LibrariesForm\0\0on_addButton_clicked()\0"
-    "on_okButton_clicked()\0"
+    "LibrariesForm\0\0name\0libraryAdded(QString)\0"
+    "on_removeButton_clicked()\0"
+    "on_addButton_clicked()\0on_okButton_clicked()\0"
 };
 
 const QMetaObject LibrariesForm::staticMetaObject = {
@@ -71,12 +76,21 @@ int LibrariesForm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: on_addButton_clicked(); break;
-        case 1: on_okButton_clicked(); break;
+        case 0: libraryAdded((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 1: on_removeButton_clicked(); break;
+        case 2: on_addButton_clicked(); break;
+        case 3: on_okButton_clicked(); break;
         default: ;
         }
-        _id -= 2;
+        _id -= 4;
     }
     return _id;
+}
+
+// SIGNAL 0
+void LibrariesForm::libraryAdded(QString _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_END_MOC_NAMESPACE

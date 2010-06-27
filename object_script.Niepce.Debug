@@ -1,0 +1,17 @@
+INPUT(
+./debug/preferencesform.o
+./debug/niepcemain.o
+./debug/main.o
+./debug/librariesform.o
+./debug/data_Library.o
+./debug/QDjangoWhere.o
+./debug/QDjangoQuerySet.o
+./debug/QDjangoModel.o
+./debug/QDjango.o
+./debug/moc_preferencesform.o
+./debug/moc_niepcemain.o
+./debug/moc_librariesform.o
+./debug/moc_data_Library.o
+./debug/moc_QDjangoModel.o
+./debug/moc_QDjango_p.o
+);
